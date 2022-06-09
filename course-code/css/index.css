@@ -1,0 +1,45 @@
+
+/*
+    Etiquetas y pseudoelementos 001 -> 1  -> unidades
+    Clases, atributos y pseudoclases 010 -> 10  -> decenas
+    id 100 -> centenas
+    
+    estilos en linea 1000
+    !important GANA a todo
+
+    "la cascada funciona siempre que la especificidad sobre el elemento sea la misma"
+*/
+
+
+h1.title#title{
+    background-color: tomato;
+}
+
+h1{
+    background-color: red
+}
+
+.title{
+    background-color:blue
+}
+
+body h1#title.title{
+    background-color: blue !important;
+}
+
+#title{
+    background-color:green
+}
+ 
+h1.title{
+
+    background-color:yellow
+}
+
+h1#title{
+    background-color: teal;
+}
+
+#title.title{
+    background-color: chartreuse !important;
+}
